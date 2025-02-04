@@ -66,21 +66,23 @@
       margin: 1em 0;
       padding: 0;
     }
-    .panel {
-      width: 95%;
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #000;
-      color: #00ffff;
-      text-align: left;
-      box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      overflow: hidden;
-      border: 1px solid #00ffff;
-    }
+  .panel {
+  width: 95%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #000;
+  color: #00ffff;
+  text-align: left;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  overflow: hidden;
+  border: 1px solid #00ffff;
+  position: relative; /* Hinzufügen von position: relative */
+  left: -30px;        /* Hinzufügen von left: -20px  (oder ein anderer passender Wert) */
+}
     .sidebar {
       width: 180px;
       display: flex;
@@ -111,6 +113,9 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      /* Reducere lățime main-content */
+      max-width: calc(100% - 200px - 350px); /* Sidebar width + System Log width + some extra margin */
+      border: 2px solid red; /* Zum Testen hinzugefügt */
     }
     .tab-section {
       display: none;
@@ -337,7 +342,7 @@
           <h2>Prezentare generală</h2>
           <div class="host-section">
             <div class="host-info">
-              <img src="https://cdn.gamma.app/fhpleqvbjim2f32/4e62fc8c50274be88b024d122d0140cf/original/image.png"
+              <img src="https://cdn.gamma.app/fhpleqvbjim2f32/32851d0aaa0c45209005ef0d6806bb45/original/5614f899-460c-402b-a3c3-97edf65963d1.png"
                    alt="Host" class="host-photo"/>
               <div class="host-details">
                 <p><strong>Nume:</strong> HOSTPETRU</p>
@@ -425,6 +430,10 @@
         DESCHIDE CUB 2 <i class="fas fa-external-link-alt"></i>
       </button>
       <iframe src="https://zaha175.github.io/CUBFRAGENPANNELROM/" title="Diagnostic extern 1"></iframe>
+    <p>
+   <p><button class="button" onclick="window.open('https://zaha175.github.io/JOC3ROM/', '_blank')">CUBSUPER <i class="fas fa-external-link-alt"></i></button></p>
+    <iframe src="https://zaha175.github.io/JOC3ROM/" ></iframe>
+    <p>
     </div>
 
     <div class="section control-panel" id="control">
@@ -432,13 +441,27 @@
       <form>
         <label for="param">Setează PARAMETRU:</label>
         <button class="button" onclick="window.open('https://zaha175.github.io/CALCULATORDEVIRSTA1/', '_blank')">
-          DESCHIDE PARAMETRU <i class="fas fa-external-link-alt"></i>
+          DESCHIDE PARAMETRU1 <i class="fas fa-external-link-alt"></i>
         </button>
         <iframe src="https://zaha175.github.io/CALCULATORDEVIRSTA1/" title="Cub 3"></iframe>
       </form>
-    </div>
+  <p>
+    <form>
+        <label for="param">Setează PARAMETRU:</label>
+       <iframe src="https://zaha175.github.io/CUBKUGEL/" title="Cub 3"></iframe>
+      </form>
+  <p>
+<form>
+        <label for="param">Setează PARAMETRU:</label>
+        <button class="button" onclick="window.open('https://zaha175.github.io/PUZZLEBILDAPP/', '_blank')">
+          DESCHIDE PARAMETRU2 <i class="fas fa-external-link-alt"></i>
+        </button>
+        <iframe src="https://zaha175.github.io/PUZZLEBILDAPP/" title="Cub 3"></iframe>
+      </form>
+     <p>
   </div>
- 
+ </div>
+
   <!-- Stare și Diagnostic -->
     <div class="section status-display" id="status">
       <h2>Stare și Diagnostic</h2>
